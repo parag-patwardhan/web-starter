@@ -1,0 +1,59 @@
+<div style="width: 100%; height: 100%; display:flex; flex-direction: column">
+
+  <!-- Flex row so that the login panel appears centered vertically -->
+  <div style="flex: 1 1 auto"></div>
+
+  <!-- Flex row for the login panel -->
+  <div style="flex: 0 0 auto">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <!-- Panel with login form controls -->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Log in</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="emailAddress">Email address</label>
+                <input type="email"
+                        class="form-control"
+                        id="emailAddress"
+                        aria-describedby="emailAddress"
+                        placeholder="Enter your email address"
+                        [(ngModel)]="emailAddress"
+                        name="emailAddress">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password"
+                        class="form-control"
+                        id="password"
+                        aria-describedby="password"
+                        placeholder="Enter your password"
+                        [(ngModel)]="password"
+                        name="password">
+              </div>
+              <div class="form-group" style="text-align: right">
+                <!-- Very important to have "type="button"" below, otherwise the form is submitted AND the router redirects -->
+                <button class="btn btn-primary" type="button" (click)="performLogin()">Login</button>
+              </div>
+              <div class="form-group" *ngIf="showLoginError">
+                <br>
+                <div class="alert alert-danger">
+                  <h4><i class="icon fa fa-ban"></i> Error</h4>
+                  Invalid username or password. Please try again.
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+
+  <!-- Flex row so that the login panel appears centered vertically -->
+  <div style="flex: 1 1 auto"></div>
+</div>
