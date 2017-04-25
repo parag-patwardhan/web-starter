@@ -9,7 +9,7 @@ The first time that you are setting up the system, you will have to do the follo
 3. cd server
 4. npm install
 5. cd developer
-6. node initDeveloperDB.js <email> <password> (where email/password will be used to log into the system)
+6. node initDeveloperDB.js email password (where email/password will be used to log into the system)
 
 Once the system is set up, you can start the server by
 1. cd server
