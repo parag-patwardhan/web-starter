@@ -1,0 +1,26 @@
+{
+  "name": "web-starter-server",
+  "version": "1.0.0",
+  "description": "Template for a typical web project (server side)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parag Patwardhan",
+  "license": "MIT",
+  "dependencies": {
+    "acl": "^0.4.10",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.4.0",
+    "mandrill-api": "^1.0.45",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^3.30.4",
+    "uuid": "^3.0.1"
+  }
+}
